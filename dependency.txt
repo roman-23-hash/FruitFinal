@@ -1,0 +1,6 @@
+Python	        3.9 to 3.11	Base language environment.			
+TensorFlow	2.10.1	        Core AI framework; supports Mixed Precision and U-Net layers.			
+OpenCV     	4.8.0.76	Image processing, BGR to RGB conversion, and HSV masking.			
+NumPy	        1.23.5         	Multi-dimensional array handling (crucial for img_input reshaping).			
+Matplotlib	3.7.1    	Plotting digital vs. thermal images side-by-side.			
+Keras	        2.10.0				
