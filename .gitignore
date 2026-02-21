@@ -1,3 +1,120 @@
-backend/model/model.h5
-backend/venv/Lib
-frontend/node_modules
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ── ML Model files ────────────────────────────────────────────────────────────
+# Model weights are large — store separately (e.g. Git LFS or shared drive)
+backend/model/*.h5
+backend/model/*.keras
+backend/model/*.pb
+backend/model/*.tflite
+backend/model/saved_model/
+
+# Keep the README and labels
+!backend/model/README.md
+!backend/model/labels.json
+
+# TensorFlow / Keras cache
+*.tfevents.*
+logs/
+runs/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+
+# Frontend env files
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ── VS Code ───────────────────────────────────────────────────────────────────
+.vscode/*
+# Keep tasks.json so team members get the one-click start
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+uvicorn.log
+
+# ── Uploads / temp files ──────────────────────────────────────────────────────
+uploads/
+temp/
+tmp/
+*.tmp
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Docker ───────────────────────────────────────────────────────────────────
+.dockerignore
+
+# ── Coverage ─────────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
